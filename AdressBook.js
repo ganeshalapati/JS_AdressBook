@@ -193,3 +193,10 @@ console.log(addressBookArray)
     console.log(addressBookArray)
     console.log("****************************************************************\n\n")
 }
+//UC6: Find number of contacts in the address book
+function numberOfContacts(totalCount) {
+    return totalCount + 1
+}
+let totalNumberOfContacts = addressBookArray.reduce(numberOfContacts, 0)
+console.log("Total Number of Contacts in the Address Book Array : " + totalNumberOfContacts);
+console.log("***********************************************************************************\n\n")
