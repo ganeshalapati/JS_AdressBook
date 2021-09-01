@@ -159,3 +159,11 @@ console.log(contact.toString());
     }
     console.log("\nContact After Setting Invalid Fields : \n" + contact.toString());
 }
+//UC3 : Create an Address Book Array and Add New Contacts to it.
+let addressBookArray = new Array();
+let contact1=new Contact("Mark","Smith","Borivali",'Mumbai','Maha','125412',"99 7854123233",'mark@gmail.com');
+addressBookArray.push(contact1)
+let contact2=new Contact("Gary","Lus","Sitaburdi",'Nagpur','Maha','441904',"91 7857723233",'gary@gmail.com');
+addressBookArray.push(contact2)
+console.log("ADDRESS BOOK ARRAY :");
+addressBookArray.forEach(contact => console.log(contact.toString()));
