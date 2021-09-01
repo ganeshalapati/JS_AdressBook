@@ -276,3 +276,12 @@ console.log("*******************************************************************
     console.log(addressBookArray.sort((a,b) => a.firstName.localeCompare(b.firstName)))
 }
 console.log("*****************************************************************************\n\n")
+//UC12 : Sort contacts by their city, state, zip
+{
+    console.log("Sort Addressbook by their city name :")
+    console.log(addressBookArray.sort((a,b) => a.city.localeCompare(b.city)))
+    console.log("\nSort Addressbook by their state name :")
+    console.log(addressBookArray.sort((a,b) => a.state.localeCompare(b.state)))
+    console.log("\nSort Addressbook by their zip code :")
+    console.log(addressBookArray.sort((a,b) => a.zip.localeCompare(b.zip)))
+}
