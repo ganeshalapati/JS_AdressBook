@@ -167,3 +167,15 @@ let contact2=new Contact("Gary","Lus","Sitaburdi",'Nagpur','Maha','441904',"91 7
 addressBookArray.push(contact2)
 console.log("ADDRESS BOOK ARRAY :");
 addressBookArray.forEach(contact => console.log(contact.toString()));
+/UC4 : Find and Edit Existing Contact using their Name
+let findName = "Gary"
+contact2 = addressBookArray.find(contact => contact._firstName == findName)
+if(contact2 != undefined) {
+    contact2.phoneNumber = "12 9898565653"
+    contact2.address = "1/2 abc society"
+    contact2.email = "garylus@gmail.com"
+} else {
+    console.log(`${findName} not found`)
+}
+console.log("After editing existing contact : ")
+console.log(addressBookArray)
