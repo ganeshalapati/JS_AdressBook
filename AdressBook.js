@@ -241,3 +241,23 @@ function addContact(contactToAdd) {
     } else throw "Contact : " + contactToAdd.firstName + " " + contactToAdd.lastName + " is already present in the Address Book Array";   
 }
 console.log("*********************************************************************************
+ //UC8: Search the person/contact by state or by city
+{
+    console.log("Search contact by city name :-")
+    let cityName = "Mumbai"
+    addressBookArray.filter(contact => contact.city == cityName).forEach(contact => console.log(contact.toString()))
+    console.log("Search contact by state name :-")
+    let stateName = "Maharashtra"
+    addressBookArray.filter(contact => contact.state == stateName).forEach(contact => console.log(contact.toString()))    
+}
+console.log("**************************************************************************\n\n")
+//UC9: View persons by city or state name
+{
+    console.log("View contacts by city name :-")
+    let cityName = "Mumbai"
+    console.log(addressBookArray.filter(contact => contact.city == cityName).map(contact => contact.firstName))
+    console.log("View contacts by state name :-")
+    let stateName = "Maharashtra"
+    console.log(addressBookArray.filter(contact => contact.state == stateName).map(contact => contact.firstName))
+}
+console.log("**************************************************************************\n\n")}
