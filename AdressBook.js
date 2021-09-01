@@ -179,3 +179,17 @@ if(contact2 != undefined) {
 }
 console.log("After editing existing contact : ")
 console.log(addressBookArray)
+
+//UC5: Find and Delete contact from address book
+{
+    let findName = "Gary"
+    let index = addressBookArray.findIndex(contact => contact._firstName === findName)
+    if (index != -1) {
+        addressBookArray.splice(index, 1)
+    } else {
+        console.log(`${findName} not found`)
+    }
+    console.log("After deleting contact from address book : ")
+    console.log(addressBookArray)
+    console.log("****************************************************************\n\n")
+}
